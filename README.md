@@ -1,4 +1,8 @@
-custom-error-pages
+Custom Error Pages
 ==================
 
-Create custom 401 and 403 error pages with any WordPress theme without writing a single line of code, set it up and forget it.
+This is the development version of this plugin.
+
+* Download the [latest stable version](http://downloads.wordpress.org/plugin/custom-error-pages.latest-stable.zip)
+* Official homepage - http://jesin.tk/wordpress-plugins/custom-error-pages/
+* WordPress plugin repository - http://wordpress.org/plugins/custom-error-pages/
