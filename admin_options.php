@@ -32,7 +32,7 @@ if( !class_exists( 'Custom_Error_Pages_Admin' ) )
 		function settings_link( $links )
 		{
 			array_unshift( $links, '<a href="' . admin_url( 'options-general.php?page=' . $this->slug ) . '">' . __( 'Settings', $this->slug ) . '</a>' );
-			$links[] = '<a href="http://jesin.tk/wordpress-plugins/" target="_blank">' .  __( 'More Plugins', $this->slug ) . '</a>';
+			$links[] = '<a href="http://websistent.com/wordpress-plugins/" target="_blank">' .  __( 'More Plugins', $this->slug ) . '</a>';
 			return $links;
 		}
 

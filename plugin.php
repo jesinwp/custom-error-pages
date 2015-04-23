@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Custom Error Pages
-Plugin URI: http://jesin.tk/wordpress-plugins/custom-error-pages/
+Plugin URI: http://websistent.com/wordpress-plugins/custom-error-pages/
 Description: Create custom 401 and 403 error pages with any WordPress theme without writing a single line of code, set it up and forget it.
 Author: Jesin
-Author URI: http://jesin.tk
+Author URI: http://websistent.com
 Version: 1.1
 */
 
