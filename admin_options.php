@@ -72,7 +72,7 @@ if( !class_exists( 'Custom_Error_Pages_Admin' ) )
 		//Displays the title input box for the custom 403 error page
 		function title_403()
 		{
-			$value = ( isset( $this->options['title_403'] ) && !empty( $this->options['title_403'] ) ) ? $this->options['title_403'] : $this->defaults['title_403'];
+			$value = ( isset( $this->options['title_403'] ) ) ? $this->options['title_403'] : $this->defaults['title_403'];
 			echo '<input id="title_403" type="text" name="jesin_' . $this->slug . '[title_403]" value="' . $value . '"/>';
 		}
 
@@ -86,7 +86,7 @@ if( !class_exists( 'Custom_Error_Pages_Admin' ) )
 		//Displays the title input box for the custom 403 error page
 		function title_401()
 		{
-			$value = ( isset( $this->options['title_401'] ) && !empty( $this->options['title_401'] ) ) ? $this->options['title_401'] : $this->defaults['title_401'];
+			$value = ( isset( $this->options['title_401'] ) ) ? $this->options['title_401'] : $this->defaults['title_401'];
 			echo '<input id="title_401" type="text" name="jesin_' . $this->slug . '[title_401]" value="' . $value . '"/>';
 		}
 
