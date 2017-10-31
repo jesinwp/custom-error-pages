@@ -16,8 +16,8 @@ WordPress offers inbuilt support for custom 404 pages on all themes. But what ab
 With this plugin you can easily create custom 401 and 403 error pages with any theme without writing a single line of code!!! And the best part is that you set it and forget it. Yes, you don't have to do any changes even if you change themes. The heading and text you want on 401 and 403 error pages are displayed on the currently active theme.
 
 = Further Reading =
-* [Create WordPress 401 and 403 error pages](http://websistent.com/wordpress-custom-403-401-error-page/) WITHOUT using this plugin
-* The [Custom Error Pages Plugin](http://websistent.com/wordpress-plugins/custom-error-pages/) official homepage.
+* [Create WordPress 401 and 403 error pages](https://websistent.com/wordpress-custom-403-401-error-page/) WITHOUT using this plugin
+* The [Custom Error Pages Plugin](https://websistent.com/wordpress-plugins/custom-error-pages/) official homepage.
 
 == Installation ==
 
