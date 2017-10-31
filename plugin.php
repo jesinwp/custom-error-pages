@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Custom Error Pages
-Plugin URI: http://websistent.com/wordpress-plugins/custom-error-pages/
+Plugin URI: https://websistent.com/wordpress-plugins/custom-error-pages/
 Description: Create custom 401 and 403 error pages with any WordPress theme without writing a single line of code, set it up and forget it.
 Author: Jesin
-Author URI: http://websistent.com
+Author URI: https://websistent.com
 Version: 1.1
 */
 
@@ -33,6 +33,7 @@ if( !class_exists( 'Create_Custom_Error_Pages' ) && !class_exists( 'Custom_Error
 			add_action( 'init', array( $this, 'plugin_init' ) );
 			add_filter( 'query_vars', array( $this, 'add_status_query_var' ) ); //Add a custom query variable
 			add_action( 'parse_request', array( $this, 'get_status_query_var' ) ); //Check if the custom query variable exists
+			add_filter( 'comments_template', array( $this, 'plugin_disable_comments' ) );
 		}
 
 		function plugin_init()
@@ -62,6 +63,13 @@ if( !class_exists( 'Create_Custom_Error_Pages' ) && !class_exists( 'Custom_Error
 
 				//Create a custom error page based on our custom query variable
 				$create_custom_error_pages = new Create_Custom_Error_Pages( array( 'options' => $this->options, 'code' => $status ) );
+			}
+		}
+
+		function plugin_disable_comments( $comment_template ) {
+			global $post;
+			if( $post->ID == 0 ) {
+				return dirname( __FILE__ ) . '/comments_disabler.php';
 			}
 		}
 	}
